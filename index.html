@@ -38,6 +38,61 @@
   </fieldset>
 </form>
 
+<div id="signup_box">
+<h1>Copy/paste example</h1>
+  <fieldset>
+    <div class="group">
+      <div class="field">
+        <label for="user_name" style="color: rgb(0, 0, 0);">Your full name</label>
+        <input autocomplete="name" autofocus="autofocus" id="user_full_name" name="user[full_name]" placeholder="Tim Tracker" style="width:250px" type="text" value="">
+
+        
+        <input autocomplete="off" id="user_url" name="user[url]" placeholder="URL" type="text" value="">
+      </div>
+    </div>
+
+    <div class="field" id="subdomain_field">
+      <label for="account_subdomain" style="color: rgb(0, 0, 0);">
+        Company or organization
+        (optional)
+      </label>
+      <input autocomplete="organization" id="organization" name="organization" placeholder="Nutsnbolts Co." type="text">
+    </div>
+
+    <div class="field" id="phone_field">
+      <label for="account_phone" style="color: rgb(0, 0, 0);">
+        Phone number
+      </label>
+      <input autocomplete="tel" id="phone" name="phone" placeholder="(123) 456-7890 or +1234567890" style="width:240px" type="text" value="">
+    </div>
+
+    <div class="group">
+      <div class="field">
+        <label for="user_email" style="color: rgb(0, 0, 0);">Your email</label>
+        <input autocomplete="email" id="user_email" name="user[email]" placeholder="tim@letsfreckle.com" style="width:250px" type="email">
+      </div>
+    </div>
+
+    <div class="group" id="user_account">
+      <div class="field">
+        <label for="user_password" style="color: rgb(0, 0, 0);">Password</label>
+        <input autocomplete="new-password" id="user_password" name="user[password]" placeholder="Hard to guess, easy to remember" style="width:260px" type="password">
+      </div>
+    </div>
+  </fieldset>
+
+  <div>
+    <input type="submit" id="submit_button" value="Get Started on Your Freckle Trial" class="vwo_loaded">
+  </div>
+
+  <div class="legalese">
+    No credit card required. By clicking, you agree to our
+    <a href="http://letsfreckle.com/terms" target="_new">terms of service</a>.
+  </div>
+
+
+</div>
+
 <form>
 <h1>Has password in form, breaks without HTTPS</h1>
 <div id="signup_box">
