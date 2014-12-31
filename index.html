@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+
+<form>
+<h1>No Password, works without HTTPS</h1>
+<div id="signup_box">
+  <input name="blah1" type="text" id="blah1" autocomplete="name-full">
+  <input name="blah2" type="text" id="blah2" autocomplete="organization">
+  <input name="phone" type="text" id="phone" autocomplete="work-phone">
+  <input name="blah4" type="text" id="blah4" autocomplete="email">
+
+  <div>
+    <input type="submit" id="submit_button" value="Signup">
+  </div>
+</div>
+</form>
+
+
+<form>
+<h1>Has password in form, breaks without HTTPS</h1>
+<div id="signup_box">
+  <input name="signup-firstname" type="text" id="firstname" data-validate="true" data-validate-required="true" data-validate-firstname="true" class="form-control js-email js-signup-firstname parsley-validated error" autocomplete="off">
+
+  <input name="signup-password" id="password" type="password" class="form-control js-password parsley-validated error" data-validate="true" data-validate-required="true" data-validate-genericpassword="true" value="">
+
+  <div>
+    <input type="submit" id="submit_button" value="Signup">
+  </div>
+</div>
+</form>
+
+</body>
+</html>
